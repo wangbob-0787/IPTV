@@ -19,7 +19,12 @@ max_lines_per_channel = 8
 # main.py 会依次请求这些地址，提取频道名和播放地址
 # 注：被注释掉的源暂时停用，可取消注释启用
 source_urls = [
-    
+    "https://raw.githubusercontent.com/best-fan/iptv-sources/main/cn_all.m3u8",
+    "https://raw.githubusercontent.com/best-fan/iptv-sources/main/cn_cctv.m3u8",
+    "https://raw.githubusercontent.com/best-fan/iptv-sources/main/cn_province.m3u8",
+    "https://raw.githubusercontent.com/yifoo/autoiptv/main/live_sources.m3u",
+    "https://raw.githubusercontent.com/zhi35/iptv/main/live-china.m3u",
+    "https://raw.githubusercontent.com/liangjunliang/iptv3/main/tv/iptv4.m3u",
 ]
 
 # ── 酒店源 ────────────────────────────────────────────
@@ -30,7 +35,7 @@ source_urls = [
 #                      "Alibaba Cloud", "Tencent" 等
 hotel_config = {
     "hotel_api": "",
-    "enabled": True,
+    "enabled": False,
     "allowed_orgs": ["China Mobile","Alibaba Cloud"],
 }
 
@@ -68,7 +73,7 @@ announcements = [
 #   2. 频道 ID 映射（{频道名: tvg-id}），让播放器正确显示节目单
 # 建议将最全面的源放在最后，作为保底
 epg_urls = [
- 
+    "https://s.102031.xyz/xml/a1999882e.xml",
 ]
 
 # ── 质量检测 — HTTP 快筛 ─────────────────────────────────────────────
